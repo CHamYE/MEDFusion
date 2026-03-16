@@ -85,9 +85,9 @@ MMIF-Survey/
 Each directory corresponds to a section in the survey paper. Start with the `README.md` in each directory for an overview, then explore the specific content files.
 
 ### 2. Find a Specific Method or Tool
-- **For fusion methods**: Navigate to `03_Technical_System/` or `04_Extended_Techniques/` and select the appropriate category
-- **For datasets**: Go to `06_Open_Source_Toolchain/06b_Datasets/`
-- **For tools**: Check `06_Open_Source_Toolchain/` for the complete toolchain
+- **For fusion methods**: Navigate to `Technical_System/` or `Extended_Techniques/` and select the appropriate category
+- **For datasets**: Go to `Open_Source/Datasets/`
+- **For tools**: Check `Open_Source_Toolchain/` for the complete toolchain
 
 ### 3. Content Format
 All resources are provided as **structured pointers** (links) to original sources, including:
