@@ -26,43 +26,38 @@ MMIF-Survey/
 ├── LICENSE                            # MIT License
 ├── CITATION.cff                       # Standardized citation file
 ├── paper/                             # Survey paper and supplementary materials
-│   ├── Information_Fusion_MMIF_Survey.pdf
+│   ├── MEDFusion.pdf
 │   └── Supplementary_Material.pdf
-├── 02_Preliminaries/                  # Section 2: Foundational knowledge
+├── Technical_System/               # Section 3: Full-chain fusion methods
 │   ├── README.md
-│   ├── medical_imaging_modalities.md
-│   ├── fusion_dimensions.md
-│   └── technical_hierarchies.md
-├── 03_Technical_System/               # Section 3: Full-chain fusion methods
-│   ├── README.md
-│   ├── 03a_Preprocessing/
+│   ├── Preprocessing/
 │   │   ├── registration_tools.md
 │   │   ├── segmentation_tools.md
 │   │   └── bias_correction_augmentation.md
-│   ├── 03b_Data_Level_Fusion/
+│   ├── Data_Level_Fusion/
 │   │   ├── traditional_methods.md
 │   │   └── deep_learning_methods.md
-│   ├── 03c_Feature_Level_Fusion/
+│   ├── Feature_Level_Fusion/
 │   │   ├── traditional_methods.md
 │   │   └── deep_learning_methods.md
-│   └── 03d_Decision_Level_Fusion/
+│   └── Decision_Level_Fusion/
 │       ├── traditional_methods.md
 │       └── deep_learning_methods.md
-├── 04_Extended_Techniques/            # Section 4: Advanced fusion techniques
+├── Extended_Techniques/            # Section 4: Advanced fusion techniques
 │   ├── README.md
-│   ├── 04a_Interpretable_Fusion/
-│   ├── 04b_Generative_Model_Fusion/
-│   ├── 04c_Low_Quality_Data_Fusion/
-│   └── 04d_Lightweight_Architectures/
-├── 05_Applications/                   # Section 5: Clinical applications
+│   ├── Interpretable_Fusion/
+│   ├── Generative_Model_Fusion/
+│   ├── Low_Quality_Data_Fusion/
+│   └── Lightweight_Architectures/
+├── Applications/                   # Section 5: Clinical applications
 │   ├── README.md
-│   ├── 05a_Fused_Image_Generation/
-│   ├── 05b_Segmentation/
-│   ├── 05c_Detection/
-│   └── 05d_Classification/
+│   ├── Fused_Image_Generation/
+│   ├── Segmentation/
+│   ├── Detection/
+│   └── Classification/
 ├── 06_Open_Source_Toolchain/          # Section 6: Full-process open-source tools
 │   ├── README.md
-│   ├── 06a_Data_Preprocessing/
+│   ├── Data_Preprocessing/
 │   │   └── tool_list.md
 │   ├── 06b_Datasets/
 │   │   └── dataset_list.md
