@@ -5,7 +5,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 [![GitHub Stars](https://img.shields.io/github/stars/your-username/MMIF-Survey?style=social)](https://github.com/CHamYe/MEDFusion)
 
-This is the official companion GitHub repository for the survey paper **"Information Fusion for Medical Image Analysis: Methods, Open Tools, and Trends"**, published in *Information Fusion*.
+This is the official companion GitHub repository for the survey paper **"Information Fusion for Medical Image Analysis: Methods, Open Tools, and Trends"**.
 
 ## 📋 Table of Contents
 - [Repository Structure](#-repository-structure)
