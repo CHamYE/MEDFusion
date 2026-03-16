@@ -55,19 +55,19 @@ MMIF-Survey/
 │   ├── Segmentation/
 │   ├── Detection/
 │   └── Classification/
-├── 06_Open_Source_Toolchain/          # Section 6: Full-process open-source tools
+├── Open_Source_Toolchain/          # Section 6: Full-process open-source tools
 │   ├── README.md
 │   ├── Data_Preprocessing/
 │   │   └── tool_list.md
-│   ├── 06b_Datasets/
+│   ├── Datasets/
 │   │   └── dataset_list.md
-│   ├── 06c_Model_Design_Frameworks/
+│   ├── Model_Design_Frameworks/
 │   │   └── framework_list.md
-│   ├── 06d_Evaluation_Visualization/
+│   ├── Evaluation_Visualization/
 │   │   └── tool_list.md
-│   └── 06e_Deployment_Inference/
+│   └── Deployment_Inference/
 │       └── tool_list.md
-├── 07_Challenges_Future_Trends/       # Section 7: Challenges and future directions
+├── Challenges_Future_Trends/       # Section 7: Challenges and future directions
 │   ├── README.md
 │   ├── core_challenges.md
 │   └── future_trends_tracking.md
@@ -159,10 +159,10 @@ If you find this survey or repository useful for your research, please cite our 
 @article{chen2025mmif_survey,
   title={Information Fusion for Medical Image Analysis: Methods, Open Tools, and Trends},
   author={Chen, Junxin and Ye, Zhiheng and Zhang, Jiawei and Li, Qiankun and Zhang, Yudong and Chen, Yang and Mou, Jun and García, Salvador and Camacho, David},
-  journal={Information Fusion},
-  year={2025},
-  publisher={Elsevier},
-  doi={10.1016/j.inffus.2025.xxxxxx}
+  journal={},
+  year={2026},
+  publisher={},
+  doi={}
 }
 ```
 
@@ -174,7 +174,7 @@ Also, please ⭐ this repository to help others discover it!
 
 - **Corresponding Author**: Jun Mou (moujun@dlpu.edu.cn)
 - **Repository Maintainer**: Zhiheng Ye (175299084@mail.dlut.edu.cn)
-- **Issues**: [GitHub Issues](https://github.com/your-username/MMIF-Survey/issues)
+- **Issues**: [GitHub Issues](https://github.com/CHamYe/MEDFusion/issues)
 
 ---
 
