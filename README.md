@@ -1,7 +1,7 @@
 # MEDFusion
 # Multi-modality Medical Image Fusion Survey - Official GitHub Repository
 
-[![DOI](https://img.shields.io/badge/DOI-10.1016/j.inffus.2025.xxxxxx-blue)](https://doi.org/)
+[![DOI](https://img.shields.io/badge/DOI-10.1016/)](https://doi.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 [![GitHub Stars](https://img.shields.io/github/stars/your-username/MMIF-Survey?style=social)](https://github.com/CHamYe/MEDFusion)
 
