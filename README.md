@@ -74,7 +74,7 @@ MMIF-Survey/
 └── assets/                             # Figures and visual resources
     ├── taxonomy_figure.png
     ├── pipeline_figure.png
-    └── benchmark_visualization.png
+    └── Visualization.png
 ```
 
 ---
