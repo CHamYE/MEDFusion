@@ -72,8 +72,8 @@ MMIF-Survey/
 │   ├── core_challenges.md
 │   └── future_trends_tracking.md
 └── assets/                             # Figures and visual resources
-    ├── taxonomy_figure.png
-    ├── pipeline_figure.png
+    ├── taxonomy.png
+    ├── pipeline.png
     └── Visualization.png
 ```
 
