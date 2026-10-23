@@ -1,13 +1,24 @@
-# Public Datasets for Multi-Modality Medical Image Fusion
-## 📌 Overview
-High-quality public datasets are the basis for the research and clinical validation of multi-modal medical image fusion (MMIF) technology. This section systematically sorts out the public datasets commonly used in the MMIF field, covering different modality combinations, anatomical parts, and clinical scenarios, with detailed information such as dataset scale, modality type, official link, and applicable tasks.
+# Public Datasets for MMIF
 
-## 📑 Curated List of Public Datasets
-| Dataset Full Name | Modality Combination | Scale & Content | Applicable Tasks | Official Link |
-|--------------------|----------------------|------------------|------------------|---------------|
-| Harvard Whole Brain Atlas | CT-MRI, MRI-PET, MRI-SPECT | Contains 384+ pairs of pre-registered brain images, covering acute stroke, glioma, cerebrovascular malformation, Alzheimer's disease and other cases, with a resolution of 256×256. | 2D multi-modal medical image fusion, brain disease diagnosis, tumor segmentation | [Official Link](http://www.med.harvard.edu/AANLIB/home.html) |
-| BraTS 2015/2018/2020/2021 (Brain Tumor Segmentation Challenge) | T1, T1c, T2, FLAIR MRI | BraTS 2021 contains 1251 cases of 3D multi-modal brain MRI, with manual annotations of whole tumor (WT), tumor core (TC), and enhancing tumor (ET). All images are pre-registered, skull-stripped, and unified to 1mm³ resolution. | 3D multi-modal fusion, brain tumor segmentation, missing modality handling | [Official Link](http://braintumorsegmentation.org/) |
-| MyoPS 2020 (Myocardial Pathology Segmentation Challenge) | bSSFP, LGE, T2 MRI | Contains 45 cases of multi-modal cardiac MRI from patients with myocardial infarction, with manual annotations of left ventricle, right ventricle, normal myocardium, myocardial edema, and myocardial scar. All images are pre-registered. | Multi-modal fusion, cardiac pathology segmentation | [Official Link](https://zmiclab.github.io/zxh/0/myops20/) |
-| MICCAI 2018 IVD Segmentation Challenge | In-phase, Opposed-phase, Fat, Water MRI | Contains 16 3D multi-modal MRI datasets of the lumbar spine, with manual annotations of intervertebral discs. | Multi-modal fusion, intervertebral disc segmentation | [Challenge Official Link](https://www.sciencedirect.com/science/article/pii/S0925231220301776?via%3Dihub) |
-| SynthRAD2023 | MRI-CT | Contains 360 pairs of radiotherapy-related MRI/CT images, covering metal artifacts, motion artifacts and other degradations, with manual annotations of tumor targets. | Degraded image fusion, radiotherapy target delineation | [Official Link](https://synthrad2023.grand-challenge.org/SynthRAD2023/) |
-| John Innes Centre GFP Database | GFP-Phase Contrast | Contains 148 pairs of pre-registered GFP-phase contrast microscopic images of Arabidopsis cells, which can be migrated to medical microscopic image fusion research. | Microscopic image fusion, biomedical image analysis | [Official Link](http://data.jic.ac.uk/Gfp/) |
+The ten datasets below are the ones used most often in the surveyed corpus. They differ in what they provide: paired modalities, segmentation labels, or a repository from which a pair must be assembled.
+
+| Dataset | Primary objective | Modality composition | Release and scale | Source |
+|---|---|---|---|---|
+| AANLIB / Whole Brain Atlas | Brain anatomy and neurological disease examples | CT, MRI, PET, SPECT; combinations vary by case | Case-based atlas | https://www.med.harvard.edu/AANLIB/ |
+| BraTS | Brain-tumour segmentation with expert annotations | Co-registered T1, T1ce, T2, FLAIR | 2020: 369 training cases, four sequences each | https://www.med.upenn.edu/cbica/brats/ |
+| TCIA | Cancer imaging collections; fusion depends on collection | Collection-dependent; multiparametric MRI, PET/CT | Collection-dependent (e.g., TCGA-GBM, 262 subjects) | https://www.cancerimagingarchive.net/ |
+| ADNI | Longitudinal imaging and biomarkers for aging and Alzheimer disease | Structural MRI and PET; sequences depend on phase | Phase- and visit-dependent cohort | https://adni.loni.usc.edu/ |
+| Imagefusion.org | Legacy image-fusion examples | Study-specific pairs; medical subset provenance unverified | No verified current release | http://www.imagefusion.org/ |
+| OASIS | Cross-sectional and longitudinal imaging of aging | OASIS-1: T1; OASIS-3: T1, T2, FLAIR, PET | Cross-sectional and longitudinal cohorts | https://www.oasis-brains.org/ |
+| IXI | Healthy-subject brain MRI | T1, T2, PD, MRA, diffusion | About 600 subjects from three London hospitals | https://brain-development.org/ixi-dataset/ |
+| CHAOS | Abdominal organ segmentation; CT and MRI cohorts not paired | CT; MRI T1-DUAL and T2-SPIR | 40 CT and 40 MRI patients (separate) | https://chaos.grand-challenge.org/ |
+| SynthRAD 2023 | Synthetic CT generation for radiotherapy | Task 1: MRI-CT; Task 2: CBCT-CT | 540 pairs per task (360/60/120) | https://synthrad2023.grand-challenge.org/ |
+| HECKTOR 2021 | Head-and-neck tumour segmentation and outcome | Registered FDG-PET and CT | 224 training and 101 test cases | https://hecktor.grand-challenge.org/ |
+
+## Pairing status
+
+Only some of these datasets provide true paired acquisitions. BraTS, SynthRAD 2023 and HECKTOR 2021 provide registered pairs; CHAOS provides CT and MRI cohorts that are not paired across modalities; AANLIB provides case-level combinations. A study that reports a fusion score on unpaired data is measuring a different task, and the entry should say so.
+
+## Links and licences
+
+Each dataset is governed by its own data-use agreement. Check the licence before redistributing any image. This repository links to the official portals and does not host imaging data.

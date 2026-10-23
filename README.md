@@ -29,6 +29,7 @@ MEDFusion/
 ├── CITATION.cff
 ├── LICENSE
 ├── studies_metric_coding.csv        # Per-study extraction behind Fig. 9 (192 studies)
+├── assets/                          # Figures reproduced from the manuscript
 ├── paper/                           # Survey manuscript and supplementary material
 ├── Technical_System/                # Section 3: preprocessing and data/feature/decision fusion
 │   ├── Preprocessing/
@@ -52,6 +53,23 @@ MEDFusion/
     ├── Evaluation_and_visualization/
     └── Deployment_and_inference/
 ```
+
+## Figures
+
+The figures below are reproduced from the manuscript so that the repository can be read without opening the PDF.
+
+| Figure | Content | Where it is used |
+|---|---|---|
+| [Fig. 1](assets/fig1.png) | Annual PubMed records, 1988–2026 | Corpus description |
+| [Fig. 2](assets/fig2.png) | Three fusion hierarchies | [`Technical_System/`](Technical_System/README.md) |
+| [Fig. 3](assets/fig3.png) | Overall MMIF pipeline | [`Technical_System/`](Technical_System/README.md) |
+| [Fig. 4](assets/fig4.png) | Interpretable fusion | [`Interpretable_Fusion/`](Extended_Techniques/Interpretable_Fusion/README.md) |
+| [Fig. 5](assets/fig5.png) | Generative paradigms | [`Generative_Model_Fusion/`](Extended_Techniques/Generative_Model_Fusion/README.md) |
+| [Fig. 6](assets/fig6.png) | Robust fusion | [`Low-quality_data-adaptive_fusion/`](Extended_Techniques/Low-quality_data-adaptive_fusion/readme.md) |
+| [Fig. 7](assets/fig7.png) | Lightweight fusion | [`Lightweight_generalized_fusion/`](Extended_Techniques/Lightweight_generalized_fusion/readme.md) |
+| [Fig. 8](assets/fig8.png) | Downstream applications | [`Applications/`](Applications/readme.md) |
+| [Fig. 9](assets/fig9.png) | Metric frequency over 192 studies | [`Open_Source/`](Open_Source/README.md) |
+| [Fig. 10](assets/fig10.png) | Challenges and future trends | Section 7 of the manuscript |
 
 ## Study Corpus and Metric Extraction
 

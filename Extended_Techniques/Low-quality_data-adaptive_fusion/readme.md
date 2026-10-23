@@ -1,8 +1,12 @@
-# Missing Modality Handling for Multi-Modality Medical Image Fusion
+# Robust Fusion for Low-Quality Data and Missing Modalities
 ## 📌 Overview
 Missing modality is a common challenge in clinical multi-modal medical image analysis: due to image damage, artifacts, acquisition protocol limitations, contrast agent allergy, or cost issues, one or more modalities are often missing in practical applications. Most existing multi-modal fusion/segmentation methods are designed for complete modalities, and their performance will drop sharply when modalities are missing.
 
-This section summarizes the representative methods for handling missing modalities in multi-modal medical image fusion and downstream tasks, which mainly solve the problem through self-supervised pre-training, modality completion, generalizable feature learning, and other technical paths.
+This section follows Section 4.3 of the manuscript, which treats robustness as a property of the whole pipeline rather than a single module. Two settings are covered: degraded inputs (noise, artifacts, low dose, spatial misalignment) and missing modalities. Representative routes include degradation-aware training, modality completion before fusion, self-supervised pre-training, and generalizable feature learning.
+
+![Robust fusion](../../assets/fig6.png)
+
+*Figure 6 of the manuscript: representative robust MMIF studies for low-quality data.*
 
 ## 📑 Curated List of Methods
 | Full Paper Title | Publication Venue & Year | Core Contributions | Paper Link | Open-Source Code |

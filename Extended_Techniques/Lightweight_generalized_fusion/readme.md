@@ -4,6 +4,10 @@ Lightweight and real-time performance are key prerequisites for the clinical dep
 
 This section summarizes the representative lightweight and real-time optimization methods for MMIF, which mainly realize lightweight design through depthwise separable convolution, neural architecture search (NAS), low-rank adaptation, model distillation, and other technical paths.
 
+![Figure 7 of the manuscript: representative lightweight MMIF studies.](../../assets/fig7.png)
+
+*Figure 7 of the manuscript: representative lightweight MMIF studies.*
+
 ## 📑 Curated List of Methods
 | Full Paper Title | Publication Venue & Year | Core Contributions | Paper Link | Open-Source Code |
 |-------------------|---------------------------|--------------------|------------|------------------|

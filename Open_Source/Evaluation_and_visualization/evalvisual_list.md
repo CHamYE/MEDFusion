@@ -1,11 +1,11 @@
 # Evaluation Metrics for Multi-Modality Medical Image Fusion
 ## 📌 Overview
-Evaluation metrics are the core basis for quantitatively comparing the performance of different MMIF methods. They are mainly divided into two categories: **full-reference metrics** (with source images as reference) and **no-reference metrics** (without reference images). In addition, for fusion methods for downstream tasks, the performance improvement of downstream tasks (segmentation, detection, diagnosis) is also an important clinical evaluation indicator.
+Evaluation metrics are the core basis for quantitatively comparing the performance of different MMIF methods. They are mainly divided into two categories: **source-referenced metrics** (computed against the source images) and **output statistics** (computed from the fused image alone). The manuscript prefers "source-referenced" over "full-reference" because the sources are references, not ground-truth fused targets. In addition, for fusion methods for downstream tasks, the performance improvement of downstream tasks (segmentation, detection, diagnosis) is also an important clinical evaluation indicator.
 
 This section systematically sorts out the commonly used evaluation metrics in the MMIF field, with detailed information such as metric definition, core function, and value trend (better when larger/smaller).
 
 ## 📑 Curated List of Evaluation Metrics
-### 1. Full-Reference Metrics (Most Commonly Used)
+### 1. Source-Referenced Metrics (Most Commonly Used)
 | Metric Full Name | Abbreviation | Core Definition & Function | Value Trend |
 |-------------------|--------------|------------------------------|-------------|
 | Structural Similarity Index Measure | SSIM | Evaluates the structural consistency between the fused image and the source images from three dimensions: brightness, contrast, and structure. It is the most commonly used metric to measure the structural retention of fused images. | Larger is better (0~1) |

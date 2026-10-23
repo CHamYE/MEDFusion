@@ -4,6 +4,10 @@ Interpretability and reliability are the core requirements for the clinical impl
 
 This section summarizes the representative methods for interpretability and reliability optimization of MMIF, which mainly solve the problem through evidence theory, uncertainty modeling, modality reliability learning, pixel-level attribution visualization, and other technical paths.
 
+![Figure 4 of the manuscript: representative interpretable MMIF studies.](../../assets/fig4.png)
+
+*Figure 4 of the manuscript: representative interpretable MMIF studies.*
+
 ## 📑 Curated List of Methods
 | Full Paper Title | Publication Venue & Year | Core Contributions | Paper Link | Open-Source Code |
 |-------------------|---------------------------|--------------------|------------|------------------|
