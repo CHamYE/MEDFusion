@@ -4,11 +4,11 @@ Preprocessing determines whether a fusion result is meaningful. Registration err
 
 | Tool | Role | Input to output | License | Link |
 |---|---|---|---|---|
-| SimpleITK | Registration and resampling | Images and masks to aligned images and transforms | Apache 2.0 | https://simpleitk.org/ |
-| ANTs | Registration and bias correction | Image volumes to affine transforms and deformation fields | Apache 2.0 | https://github.com/ANTsX/ANTs |
-| 3D Slicer | Inspection and ROI editing | Volumes, labels and transforms to scenes and masks | BSD-style | https://www.slicer.org/ |
-| MONAI | Medical-image transforms and loading | Images and metadata to transformed tensors | Apache 2.0 | https://github.com/Project-MONAI/MONAI |
-| TorchIO | Patch sampling and augmentation | Subject images and labels to transformed volumes and patches | Apache 2.0 | https://github.com/TorchIO-project/torchio |
+| [SimpleITK](https://simpleitk.org/) | Registration and resampling | Images and masks to aligned images and transforms | Apache 2.0 | https://simpleitk.org/ |
+| [ANTs](https://github.com/ANTsX/ANTs) | Registration and bias correction | Image volumes to affine transforms and deformation fields | Apache 2.0 | https://github.com/ANTsX/ANTs |
+| [3D Slicer](https://www.slicer.org/) | Inspection and ROI editing | Volumes, labels and transforms to scenes and masks | BSD-style | https://www.slicer.org/ |
+| [MONAI](https://github.com/Project-MONAI/MONAI) | Medical-image transforms and loading | Images and metadata to transformed tensors | Apache 2.0 | https://github.com/Project-MONAI/MONAI |
+| [TorchIO](https://github.com/TorchIO-project/torchio) | Patch sampling and augmentation | Subject images and labels to transformed volumes and patches | Apache 2.0 | https://github.com/TorchIO-project/torchio |
 
 ## Minimum record for a preprocessing step
 

@@ -62,3 +62,14 @@ All ten manuscript tables are now in [`tables/`](tables/README.md). Tables 3–5
 | 10 Evaluation system | 7 dimensions | structure + measures; formulas remain in the PDF |
 
 Verification performed: column-count check on every row, no LaTeX residue (`\cite`, `\textbf`, `\begin`, `\multicolumn`), all relative links resolve, CSV rows/columns consistent, and totals match the manuscript.
+
+## 6. Link pass (2026-10-23)
+
+Every resource name now carries its own hyperlink:
+
+- Paper titles in Tables 1, 3–6 link to the DOI (rows without a DOI stay unlinked: 9/48 in Table 3, 21/153 in Table 4, 2/10 in Table 5, 6/13 in Table 1, 2/8 in Table 6).
+- Tool names in Table 8 and in the three `Open_Source/*` tool lists link to their official sites (17/17 in Table 8, 5 per tool list).
+- Dataset names in Table 9 and `Open_Source/Datasets/dataset_list.md` link to the source portal (10/10).
+- Method titles in `Technical_System/*`, `Extended_Techniques/*` and `Applications/*` link to the paper or code URL already recorded in the row (114 links in Data_Level, 31 in Feature_Level, 11 in Decision_Level, 7 in Preprocessing, plus 42 across the four direction/application pages).
+
+Checks: column counts unchanged (0 bad rows), bracket balance 0, no LaTeX residue, all relative links resolve.

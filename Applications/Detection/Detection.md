@@ -12,10 +12,10 @@ Report mAP at a stated IoU threshold, sensitivity at fixed false positives per c
 
 | Title | Venue, Year | DOI |
 |---|---|---|
-| Yolo-SG: Salience-Guided Detection of Small Objects in Medical Images | 2022 IEEE International Conference on Image Processing (ICIP), 2022 | [10.1109/icip46576.2022.9898077](https://doi.org/10.1109/icip46576.2022.9898077) |
+| [Yolo-SG: Salience-Guided Detection of Small Objects in Medical Images](https://doi.org/10.1109/icip46576.2022.9898077) | 2022 IEEE International Conference on Image Processing (ICIP), 2022 | [10.1109/icip46576.2022.9898077](https://doi.org/10.1109/icip46576.2022.9898077) |
 | Artificial Intelligence Empowered Coronary Artery Imaging: A Review | Computerized Medical Imaging and Graphics, 2026 | NR |
-| A Corresponding Region Fusion Framework for Multi-Modal Cervical Lesion Detection | IEEE/ACM Transactions on Computational Biology and Bioinformatics, 2024 | [10.1109/tcbb.2022.3178725](https://doi.org/10.1109/tcbb.2022.3178725) |
-| An Adaptive and Lightweight YOLOv5 Detection Model for Lung Tumor in PET/CT Images | Scientific Reports, 2024 | [10.1038/s41598-024-79786-1](https://doi.org/10.1038/s41598-024-79786-1) |
+| [A Corresponding Region Fusion Framework for Multi-Modal Cervical Lesion Detection](https://doi.org/10.1109/tcbb.2022.3178725) | IEEE/ACM Transactions on Computational Biology and Bioinformatics, 2024 | [10.1109/tcbb.2022.3178725](https://doi.org/10.1109/tcbb.2022.3178725) |
+| [An Adaptive and Lightweight YOLOv5 Detection Model for Lung Tumor in PET/CT Images](https://doi.org/10.1038/s41598-024-79786-1) | Scientific Reports, 2024 | [10.1038/s41598-024-79786-1](https://doi.org/10.1038/s41598-024-79786-1) |
 
 ## What to check in an entry
 

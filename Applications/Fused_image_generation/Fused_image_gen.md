@@ -16,11 +16,11 @@ Source-referenced measures (MI, Q^AB/F, SSIM, VIF, SCD), output statistics (EN, 
 
 | Title | Venue, Year | DOI |
 |---|---|---|
-| MGMDcGAN: Medical Image Fusion using Multi-Generator Multi-Discriminator Conditional Generative Adversarial Network | IEEE Access, 2020 | [10.1109/access.2020.2982016](https://doi.org/10.1109/access.2020.2982016) |
+| [MGMDcGAN: Medical Image Fusion using Multi-Generator Multi-Discriminator Conditional Generative Adversarial Network](https://doi.org/10.1109/access.2020.2982016) | IEEE Access, 2020 | [10.1109/access.2020.2982016](https://doi.org/10.1109/access.2020.2982016) |
 | Anatomical-Functional Image Fusion by Information of Interest in Local Laplacian Filtering Domain | IEEE Transactions on Image Processing, 2017 | NR |
-| A New Approach of Multi-Modal Medical Image Fusion using Intuitionistic Fuzzy Set | Biomedical Signal Processing and Control, 2022 | [10.1016/j.bspc.2022.103762](https://doi.org/10.1016/j.bspc.2022.103762) |
-| A Multiscale Residual Pyramid Attention Network for Medical Image Fusion | Biomedical Signal Processing and Control, 2021 | [10.1016/j.bspc.2021.102488](https://doi.org/10.1016/j.bspc.2021.102488) |
-| MACTFusion: Lightweight Cross Transformer for Adaptive Multimodal Medical Image Fusion | IEEE Journal of Biomedical and Health Informatics, 2025 | [10.1109/jbhi.2024.3391620](https://doi.org/10.1109/jbhi.2024.3391620) |
+| [A New Approach of Multi-Modal Medical Image Fusion using Intuitionistic Fuzzy Set](https://doi.org/10.1016/j.bspc.2022.103762) | Biomedical Signal Processing and Control, 2022 | [10.1016/j.bspc.2022.103762](https://doi.org/10.1016/j.bspc.2022.103762) |
+| [A Multiscale Residual Pyramid Attention Network for Medical Image Fusion](https://doi.org/10.1016/j.bspc.2021.102488) | Biomedical Signal Processing and Control, 2021 | [10.1016/j.bspc.2021.102488](https://doi.org/10.1016/j.bspc.2021.102488) |
+| [MACTFusion: Lightweight Cross Transformer for Adaptive Multimodal Medical Image Fusion](https://doi.org/10.1109/jbhi.2024.3391620) | IEEE Journal of Biomedical and Health Informatics, 2025 | [10.1109/jbhi.2024.3391620](https://doi.org/10.1109/jbhi.2024.3391620) |
 
 ## What to check in an entry
 

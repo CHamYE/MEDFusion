@@ -18,6 +18,7 @@ Every table in the manuscript is reproduced here in Markdown so that the reposit
 ## Notes on the conversion
 
 - Tables 3–5 list **211 entries** from **192 distinct studies**; a study that appears in more than one configuration is repeated, as in the manuscript. The per-study extraction (one row per study) is in [`studies_metric_coding.csv`](../studies_metric_coding.csv).
-- Citation markers were converted to DOI links using `refs_R1.bib`. Where a record has no DOI, no link is shown.
+- Citation markers were converted to DOI links using `refs_R1.bib`; the paper title itself is the link. Where a record has no DOI, the title is left unlinked (9 rows in Table 3, 21 in Table 4, 2 in Table 5).
 - Mathematical notation is written in plain text (`Q^AB/F`, `e_max`). The typeset formulas remain in the manuscript PDF.
+- Tool names in Table 8 link to their official sites; dataset names in Table 9 link to the source portal.
 - Table 10 keeps the two-level structure (dimension, then measure); formula rows are represented by the measure name only.

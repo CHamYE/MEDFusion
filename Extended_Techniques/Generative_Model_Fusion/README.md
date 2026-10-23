@@ -16,13 +16,13 @@ Generative fusion uses a learned image prior to construct or restore an image. T
 
 | Title | Venue, Year | DOI |
 |---|---|---|
-| DDcGAN: A Dual-Discriminator Conditional Generative Adversarial Network for Multi-Resolution Image Fusion | IEEE Transactions on Image Processing, 2020 | [10.1109/tip.2020.2977573](https://doi.org/10.1109/tip.2020.2977573) |
-| U-Patch GAN: A Medical Image Fusion Method Based on GAN | Journal of Digital Imaging, 2023 | [10.1007/s10278-022-00696-7](https://doi.org/10.1007/s10278-022-00696-7) |
-| Multi-Modality Medical Image Segmentation via Adversarial Learning with CV Energy Functional | Expert Systems with Applications, 2025 | [10.1016/j.eswa.2025.127467](https://doi.org/10.1016/j.eswa.2025.127467) |
-| DDFM: Denoising Diffusion Model for Multi-Modality Image Fusion | Proceedings of the IEEE/CVF international conference on computer vision, 2023 | [10.1109/iccv51070.2023.00742](https://doi.org/10.1109/iccv51070.2023.00742) |
-| DM-FNet: Unified Multimodal Medical Image Fusion via Diffusion Process-Trained Encoder-Decoder | IEEE Transactions on Multimedia, 2025 | [10.1109/tmm.2025.3613156](https://doi.org/10.1109/tmm.2025.3613156) |
-| Mask-DiFuser: A Masked Diffusion Model for Unified Unsupervised Image Fusion | IEEE Transactions on Pattern Analysis and Machine Intelligence, 2026 | [10.1109/tpami.2025.3609323](https://doi.org/10.1109/tpami.2025.3609323) |
-| DRMF: Degradation-Robust Multi-Modal Image Fusion via Composable Diffusion Prior | Proceedings of the 32nd ACM International Conference on Multimedia, 2024 | [10.1145/3664647.3681064](https://doi.org/10.1145/3664647.3681064) |
+| [DDcGAN: A Dual-Discriminator Conditional Generative Adversarial Network for Multi-Resolution Image Fusion](https://doi.org/10.1109/tip.2020.2977573) | IEEE Transactions on Image Processing, 2020 | [10.1109/tip.2020.2977573](https://doi.org/10.1109/tip.2020.2977573) |
+| [U-Patch GAN: A Medical Image Fusion Method Based on GAN](https://doi.org/10.1007/s10278-022-00696-7) | Journal of Digital Imaging, 2023 | [10.1007/s10278-022-00696-7](https://doi.org/10.1007/s10278-022-00696-7) |
+| [Multi-Modality Medical Image Segmentation via Adversarial Learning with CV Energy Functional](https://doi.org/10.1016/j.eswa.2025.127467) | Expert Systems with Applications, 2025 | [10.1016/j.eswa.2025.127467](https://doi.org/10.1016/j.eswa.2025.127467) |
+| [DDFM: Denoising Diffusion Model for Multi-Modality Image Fusion](https://doi.org/10.1109/iccv51070.2023.00742) | Proceedings of the IEEE/CVF international conference on computer vision, 2023 | [10.1109/iccv51070.2023.00742](https://doi.org/10.1109/iccv51070.2023.00742) |
+| [DM-FNet: Unified Multimodal Medical Image Fusion via Diffusion Process-Trained Encoder-Decoder](https://doi.org/10.1109/tmm.2025.3613156) | IEEE Transactions on Multimedia, 2025 | [10.1109/tmm.2025.3613156](https://doi.org/10.1109/tmm.2025.3613156) |
+| [Mask-DiFuser: A Masked Diffusion Model for Unified Unsupervised Image Fusion](https://doi.org/10.1109/tpami.2025.3609323) | IEEE Transactions on Pattern Analysis and Machine Intelligence, 2026 | [10.1109/tpami.2025.3609323](https://doi.org/10.1109/tpami.2025.3609323) |
+| [DRMF: Degradation-Robust Multi-Modal Image Fusion via Composable Diffusion Prior](https://doi.org/10.1145/3664647.3681064) | Proceedings of the 32nd ACM International Conference on Multimedia, 2024 | [10.1145/3664647.3681064](https://doi.org/10.1145/3664647.3681064) |
 
 ## What to record for a generative method
 
