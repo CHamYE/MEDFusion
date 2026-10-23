@@ -14,19 +14,19 @@
 
 Junxin Chen · Zhiheng Ye · Mingzhi Wang · Jiawei Zhang · Jun Mou · Xu Xu · Yongfei Wu · Wei William Wang
 
-[**Manuscript (PDF)**](paper/MEDFusion.pdf) · [**Study table (CSV)**](studies_metric_coding.csv) · [**All tables**](tables/README.md) · [**Figures**](#figures) · [**Citation**](#citation)
+[**Manuscript (PDF)**](paper/MEDFusion.pdf) · [**Study table (CSV)**](studies_metric_coding.csv) · [**All tables**](tables/README.md) · [**Figures**](#-figures) · [**Citation**](#-citation)
 
 </div>
 
 ---
 
-## Why this repository
+## 📖 Why this repository
 
 Reading a survey tells you what the field looks like; it does not tell you where the code, the datasets, or the numbers are. This repository closes that gap. Every folder follows one section of the manuscript, every entry follows the same record template, and every paper, dataset and tool name links to its source.
 
 The repository is meant to be **checked**, not just browsed: the per-study extraction behind Fig. 9 is released, the ten manuscript tables are reproduced in Markdown, and the figures can be read without opening the PDF.
 
-## At a glance
+## 📊 At a glance
 
 | | |
 |---|---|
@@ -38,27 +38,30 @@ The repository is meant to be **checked**, not just browsed: the per-study extra
 | **10** datasets · **17** tools | Tables 9 and 8 |
 | **10** manuscript tables | Reproduced in [`tables/`](tables/README.md) |
 
-## News
+## 🆕 News
 
 - **2026-10** — Repository restructured to follow the R1 manuscript; all ten tables added; every resource name linked to its source.
 - **2026-10** — `studies_metric_coding.csv` released (192 studies, 23 columns); Fig. 9 reproducible from the `uses_*` columns.
 - **2026-09** — Link audit completed; verification date recorded in the captions and in Section 6 of the manuscript.
 
-## Contents
+## 🧭 Contents
 
-- [Repository structure](#repository-structure)
-- [Figures](#figures)
-- [Tables](#tables)
-- [Study corpus and metric extraction](#study-corpus-and-metric-extraction)
-- [Quick start](#quick-start)
-- [Entry format](#entry-format)
-- [How to contribute](#how-to-contribute)
-- [Maintenance](#maintenance)
-- [Citation](#citation)
-- [Contact](#contact)
-- [License](#license)
+- [Repository structure](#-repository-structure)
+- [Figures](#-figures)
+- [Tables](#-tables)
+- [Study corpus and metric extraction](#-study-corpus-and-metric-extraction)
+- [Quick start](#-quick-start)
+- [Entry format](#-entry-format)
+- [How to contribute](#-how-to-contribute)
+- [Maintenance](#-maintenance)
+- [Citation](#-citation)
+- [Contact](#-contact)
+- [License](#-license)
 
-## Repository structure
+## 📁 Repository structure
+
+<details>
+<summary><b>Directory tree</b></summary>
 
 ```
 MEDFusion/
@@ -94,7 +97,9 @@ MEDFusion/
     └── Deployment_and_inference/
 ```
 
-## Figures
+</details>
+
+## 🖼️ Figures
 
 Reproduced from the manuscript so that the repository can be read without the PDF.
 
@@ -115,7 +120,7 @@ Reproduced from the manuscript so that the repository can be read without the PD
   <img src="assets/fig3.png" alt="Overall MMIF pipeline" width="92%">
 </p>
 
-## Tables
+## 📋 Tables
 
 All ten manuscript tables are reproduced in [`tables/`](tables/README.md). Tables 3–5 — the complete study corpus — are also released as CSV with the same columns.
 
@@ -132,7 +137,7 @@ All ten manuscript tables are reproduced in [`tables/`](tables/README.md). Table
 | [9](tables/table9_datasets.md) | Public datasets | 10 |
 | [10](tables/table10_evaluation.md) | Evaluation system | 7 dimensions |
 
-## Study corpus and metric extraction
+## 🗂️ Study corpus and metric extraction
 
 `studies_metric_coding.csv` contains the per-study extraction used for the metric-frequency analysis in **Fig. 9**. It covers the **192 distinct studies** catalogued in Tables 3–5 (211 table entries, because 17 studies appear in more than one configuration).
 
@@ -173,13 +178,16 @@ print(counts)
 
 Expected counts: MI 88, Q_AB/F 71, SSIM 66, VIF 59, EN 55, SD 51, SF 40, PSNR 39, SCD 27, DSC 25, FMI 19, Acc 15, MSE 9.
 
-## Quick start
+## 🚀 Quick start
 
 1. **Browse by manuscript section.** Each directory corresponds to a section of the survey; start with its `README.md`.
 2. **Find a method, dataset or tool.** Use the folder for the fusion level or pipeline stage, or search the repository for the name.
 3. **Check the evidence.** `studies_metric_coding.csv` links each study to its reported metrics and validation label; `tables/` gives the manuscript table it came from.
 
-## Entry format
+## 🧾 Entry format
+
+<details>
+<summary><b>Record templates for papers, tools and datasets</b></summary>
 
 Research papers:
 
@@ -204,7 +212,9 @@ Tools and datasets:
 - **Links**: documentation · quick start
 ```
 
-## How to contribute
+</details>
+
+## 🤝 How to contribute
 
 1. Open an issue describing the addition or correction.
 2. Fork the repository and follow the entry format above.
@@ -212,11 +222,11 @@ Tools and datasets:
 
 Include a DOI or publisher link for every paper, and the official repository link for every tool. New entries should state the dataset, the metric family and the validation evidence, not only the reported score. See [CONTRIBUTING.md](.github/CONTRIBUTING.md).
 
-## Maintenance
+## 🛠️ Maintenance
 
 Maintained by the author team, with **Zhiheng Ye** as the designated maintainer. Updates are released annually and after the major medical-imaging conferences (MICCAI, ISBI, MIDL). Community corrections are handled through issues and pull requests. Each release records the date on which the links were checked; the current release was verified on **29 September 2026**.
 
-## Citation
+## 📚 Citation
 
 ```bibtex
 @article{chen2026mmif_survey,
@@ -230,19 +240,17 @@ Maintained by the author team, with **Zhiheng Ye** as the designated maintainer.
 
 Machine-readable metadata: [`CITATION.cff`](CITATION.cff).
 
-## Contact
+## 📬 Contact
 
 - **Corresponding author**: Jun Mou (moujun@dlpu.edu.cn)
 - **Repository maintainer**: Zhiheng Ye (175299084@mail.dlut.edu.cn)
 - **Issues**: [GitHub Issues](https://github.com/CHamYE/MEDFusion/issues)
 
-## License
+## ⚖️ License
 
 Content released under the MIT License. All links point to external resources maintained by their respective authors; this repository does not host or redistribute third-party code, datasets or tools. Please refer to the original sources for their license terms.
 
 <div align="center">
-
-[![Star History Chart](https://api.star-history.com/svg?repos=CHamYE/MEDFusion&type=Date)](https://star-history.com/#CHamYE/MEDFusion&Date)
 
 <sub>If this repository helps your work, please consider citing the survey.</sub>
 

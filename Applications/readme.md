@@ -1,6 +1,6 @@
 # Task-Oriented Clinical Applications
 
-## Overview
+## 📌 Overview
 
 This folder mirrors Section 5 of the survey. Fusion is rarely the endpoint: it supports a clinical task. The four task families here differ in input, output and metric, so a fused image that looks good is not automatically useful for the task.
 
@@ -15,16 +15,16 @@ This folder mirrors Section 5 of the survey. Fusion is rarely the endpoint: it s
 | Detection | Fused image or source pair | Boxes or lesions | mAP, sensitivity, false positives per case | [Detection/](Detection/Detection.md) |
 | Classification | Fused image or features | Class label | Accuracy, AUC, sensitivity/specificity | [Classification/](Classification/Cls.md) |
 
-## Reported results
+## 📈 Reported results
 
 [Table 7](../tables/table7_reported_quantitative.md) reproduces the CT–T1-Gd MRI fusion and contouring results on GLIS-RT reported by Safari et al., including EN, SSIM, Q^AB/F, contouring Dice and cost.
 
-## Two evaluation questions
+## ❓ Two evaluation questions
 
 **Does fusion help the task?** The comparison must be against the same task model trained on the same data without fusion, not against a different architecture. Task gains reported without this control do not establish a benefit of fusion.
 
 **Does the task benefit transfer?** A gain on a public benchmark with a fixed split is internal evidence. External validation, a reader study, or a prospective evaluation is needed before the gain can be called clinical.
 
-## Relation to the evaluation framework
+## 🧮 Relation to the evaluation framework
 
 The metric families used in these folders follow Table 10 of the manuscript: source-referenced measures, output statistics, task performance, efficiency, and robustness. The metric-frequency analysis in Fig. 9 shows that task-level measures remain uncommon, which is the gap these folders are intended to make visible.
