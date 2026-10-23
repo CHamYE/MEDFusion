@@ -41,4 +41,4 @@ The complete study tables are reproduced in [`tables/`](../tables/README.md):
 
 Every method entry records the modalities, the fusion level, the reported metrics, and the validation evidence (benchmark, retrospective, external, reader study, prospective, or unclear). The validation label is defined in Section 6.4 of the manuscript; it describes how a study was evaluated and is not a quality score.
 
-Where a study spans more than one level, it appears under each level and is counted once per metric family in the corpus statistics. The per-study extraction is released in [`studies_metric_coding.csv`](../../studies_metric_coding.csv).
+Where a study spans more than one level, it appears under each level and is counted once per metric family in the corpus statistics. The per-study extraction is released in [`studies_metric_coding.csv`](../studies_metric_coding.csv).
