@@ -43,3 +43,22 @@ All DOIs are taken from `refs_R1.bib`; no reference was introduced beyond the ma
 
 - The per-method tables in `Technical_System/*` predate this audit and were not re-verified row by row against the publisher pages.
 - `Applications/Classification/Cls.md` keeps its historic name; renaming it requires updating links in `Applications/readme.md`.
+
+## 5. Tables added (2026-10-23, second pass)
+
+All ten manuscript tables are now in [`tables/`](tables/README.md). Tables 3–5 are complete: 48 + 153 + 10 = **211 entries from 192 studies**, matching the manuscript; each is also released as CSV.
+
+| Table | Rows | Check |
+|---|---|---|
+| 1 Comparison with prior surveys | 13 | 12 surveys + this review |
+| 2 Configurations across three axes | 6 | all configurations in the paper |
+| 3 Data-level studies | 48 | full table |
+| 4 Feature-level studies | 153 | full table |
+| 5 Decision-level studies | 10 | full table |
+| 6 Cross-generation comparison | 8 | all methods compared |
+| 7 Reported quantitative results | 16 | 16 methods on GLIS-RT |
+| 8 Software components | 17 | all tools in Table 8 |
+| 9 Public datasets | 10 | all datasets in Table 9 |
+| 10 Evaluation system | 7 dimensions | structure + measures; formulas remain in the PDF |
+
+Verification performed: column-count check on every row, no LaTeX residue (`\cite`, `\textbf`, `\begin`, `\multicolumn`), all relative links resolve, CSV rows/columns consistent, and totals match the manuscript.

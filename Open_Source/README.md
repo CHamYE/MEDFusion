@@ -16,6 +16,12 @@ This folder mirrors Section 6 of the survey. It separates four kinds of resource
 
 *Figure 9 of the manuscript: which metric families the 192 surveyed studies actually report.*
 
+## Tables
+
+- [Table 8 — software components](../tables/table8_tools.md)
+- [Table 9 — public datasets](../tables/table9_datasets.md)
+- [Table 10 — evaluation system](../tables/table10_evaluation.md)
+
 ## Reproducibility protocol
 
 Section 6.6 of the manuscript specifies a paired-image protocol: fixed registration and resampling, stated intensity normalization, one metric implementation with parameters, and a reported split. The repository records the same fields so that a reported score can be traced to a configuration.

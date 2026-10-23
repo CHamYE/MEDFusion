@@ -29,6 +29,14 @@ The three hierarchies are not interchangeable. Data-level fusion keeps the origi
 | [`Feature_Level_Fusion/`](Feature_Level_Fusion/README.md) | Encoder-decoder and transformer fusion | Section 3.4 |
 | [`Decision_Level_Fusion/`](Decision_Level_Fusion/README.md) | Evidence theory, voting, probabilistic fusion | Section 3.5 |
 
+## Full study tables
+
+The complete study tables are reproduced in [`tables/`](../tables/README.md):
+
+- [Table 3 — data-level studies](../tables/table3_data_level.md) (48 entries)
+- [Table 4 — feature-level studies](../tables/table4_feature_level.md) (153 entries)
+- [Table 5 — decision-level studies](../tables/table5_decision_level.md) (10 entries)
+
 ## Reading the entries
 
 Every method entry records the modalities, the fusion level, the reported metrics, and the validation evidence (benchmark, retrospective, external, reader study, prospective, or unclear). The validation label is defined in Section 6.4 of the manuscript; it describes how a study was evaluated and is not a quality score.

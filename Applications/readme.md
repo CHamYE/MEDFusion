@@ -15,6 +15,10 @@ This folder mirrors Section 5 of the survey. Fusion is rarely the endpoint: it s
 | Detection | Fused image or source pair | Boxes or lesions | mAP, sensitivity, false positives per case | [Detection/](Detection/Detection.md) |
 | Classification | Fused image or features | Class label | Accuracy, AUC, sensitivity/specificity | [Classification/](Classification/Cls.md) |
 
+## Reported results
+
+[Table 7](../tables/table7_reported_quantitative.md) reproduces the CT–T1-Gd MRI fusion and contouring results on GLIS-RT reported by Safari et al., including EN, SSIM, Q^AB/F, contouring Dice and cost.
+
 ## Two evaluation questions
 
 **Does fusion help the task?** The comparison must be against the same task model trained on the same data without fusion, not against a different architecture. Task gains reported without this control do not establish a benefit of fusion.

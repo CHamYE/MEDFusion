@@ -30,6 +30,7 @@ MEDFusion/
 ├── LICENSE
 ├── studies_metric_coding.csv        # Per-study extraction behind Fig. 9 (192 studies)
 ├── assets/                          # Figures reproduced from the manuscript
+├── tables/                          # All manuscript tables (3–5 also as CSV)
 ├── paper/                           # Survey manuscript and supplementary material
 ├── Technical_System/                # Section 3: preprocessing and data/feature/decision fusion
 │   ├── Preprocessing/
@@ -70,6 +71,10 @@ The figures below are reproduced from the manuscript so that the repository can 
 | [Fig. 8](assets/fig8.png) | Downstream applications | [`Applications/`](Applications/readme.md) |
 | [Fig. 9](assets/fig9.png) | Metric frequency over 192 studies | [`Open_Source/`](Open_Source/README.md) |
 | [Fig. 10](assets/fig10.png) | Challenges and future trends | Section 7 of the manuscript |
+
+## Tables
+
+All ten tables of the manuscript are reproduced in [`tables/`](tables/README.md). Tables 3–5 (data-, feature- and decision-level studies) are also available as CSV with the same columns.
 
 ## Study Corpus and Metric Extraction
 
