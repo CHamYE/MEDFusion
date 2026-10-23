@@ -1,183 +1,171 @@
 # MEDFusion
-# Multi-modality Medical Image Fusion Survey - Official GitHub Repository
 
-[![DOI](https://img.shields.io/badge/DOI-10.1016/)](https://doi.org/)
+# Medical Image Fusion: Fusion Paradigms, Clinical Applications, and Open Resources — Companion Repository
+
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
-[![GitHub Stars](https://img.shields.io/github/stars/your-username/MMIF-Survey?style=social)](https://github.com/CHamYe/MEDFusion)
+[![GitHub Stars](https://img.shields.io/github/stars/CHamYE/MEDFusion?style=social)](https://github.com/CHamYE/MEDFusion)
 
-This is the official companion GitHub repository for the survey paper **"Information Fusion for Medical Image Analysis: Methods, Open Tools, and Trends"**.
+This is the official companion repository for the survey **"Medical Image Fusion: Fusion Paradigms, Clinical Applications, and Open Resources"** by Junxin Chen, Zhiheng Ye, Mingzhi Wang, Jiawei Zhang, Jun Mou, Xu Xu, Yongfei Wu, and Wei William Wang.
 
-## 📋 Table of Contents
+The repository mirrors the structure of the manuscript: every directory corresponds to a section, and every entry follows the same record template so that a method, dataset, or tool can be traced back to the paragraph that discusses it.
+
+## Table of Contents
+
 - [Repository Structure](#-repository-structure)
+- [Study Corpus and Metric Extraction](#-study-corpus-and-metric-extraction)
 - [Quick Start](#-quick-start)
+- [Entry Format](#-entry-format)
 - [How to Contribute](#-how-to-contribute)
+- [Maintenance](#-maintenance)
 - [Citation](#-citation)
 - [Contact](#-contact)
+- [License](#-license)
 
----
-
-## 📁 Repository Structure
-
-The repository is organized **exactly following the structure of the survey paper** to ensure seamless navigation between the manuscript and practical resources:
+## Repository Structure
 
 ```
-MMIF-Survey/
-├── README.md                          # This file
-├── LICENSE                            # MIT License
-├── CITATION.cff                       # Standardized citation file
-├── paper/                             # Survey paper and supplementary materials
-│   ├── MEDFusion.pdf
-│   └── Supplementary_Material.pdf
-├── Technical_System/               # Section 3: Full-chain fusion methods
-│   ├── README.md
+MEDFusion/
+├── README.md
+├── CITATION.cff
+├── LICENSE
+├── studies_metric_coding.csv        # Per-study extraction behind Fig. 9 (192 studies)
+├── paper/                           # Survey manuscript and supplementary material
+├── Technical_System/                # Section 3: preprocessing and data/feature/decision fusion
 │   ├── Preprocessing/
-│   │   ├── registration_tools.md
-│   │   ├── segmentation_tools.md
-│   │   └── bias_correction_augmentation.md
 │   ├── Data_Level_Fusion/
-│   │   ├── traditional_methods.md
-│   │   └── deep_learning_methods.md
 │   ├── Feature_Level_Fusion/
-│   │   ├── traditional_methods.md
-│   │   └── deep_learning_methods.md
 │   └── Decision_Level_Fusion/
-│       ├── traditional_methods.md
-│       └── deep_learning_methods.md
-├── Extended_Techniques/            # Section 4: Advanced fusion techniques
-│   ├── README.md
+├── Extended_Techniques/             # Section 4: interpretable, generative, robust, lightweight
 │   ├── Interpretable_Fusion/
 │   ├── Generative_Model_Fusion/
-│   ├── Low_Quality_Data_Fusion/
-│   └── Lightweight_Architectures/
-├── Applications/                   # Section 5: Clinical applications
-│   ├── README.md
-│   ├── Fused_Image_Generation/
+│   ├── Low-quality_data-adaptive_fusion/
+│   └── Lightweight_generalized_fusion/
+├── Applications/                    # Section 5: fused-image generation, segmentation, detection, classification
+│   ├── Fused_image_generation/
 │   ├── Segmentation/
 │   ├── Detection/
 │   └── Classification/
-├── Open_Source_Toolchain/          # Section 6: Full-process open-source tools
-│   ├── README.md
-│   ├── Data_Preprocessing/
-│   │   └── tool_list.md
-│   ├── Datasets/
-│   │   └── dataset_list.md
-│   ├── Model_Design_Frameworks/
-│   │   └── framework_list.md
-│   ├── Evaluation_Visualization/
-│   │   └── tool_list.md
-│   └── Deployment_Inference/
-│       └── tool_list.md
-├── Challenges_Future_Trends/       # Section 7: Challenges and future directions
-│   ├── README.md
-│   ├── core_challenges.md
-│   └── future_trends_tracking.md
-└── assets/                             # Figures and visual resources
-    ├── taxonomy.png
-    ├── pipeline.png
-    └── Visualization.png
+└── Open_Source/                     # Section 6: datasets, frameworks, evaluation, visualization, deployment
+    ├── Data_Preprocessing/
+    ├── Datasets/
+    ├── Model_design_and_training_frameworks/
+    ├── Evaluation_and_visualization/
+    └── Deployment_and_inference/
 ```
 
----
+## Study Corpus and Metric Extraction
 
-## 🚀 Quick Start
+`studies_metric_coding.csv` contains the per-study extraction used for the metric-frequency analysis in **Fig. 9** of the manuscript. It covers the **192 distinct studies** catalogued in Tables 3–5 (211 table entries, because 17 studies appear in more than one configuration).
 
-### 1. Browse by Survey Section
-Each directory corresponds to a section in the survey paper. Start with the `README.md` in each directory for an overview, then explore the specific content files.
+Columns:
 
-### 2. Find a Specific Method or Tool
-- **For fusion methods**: Navigate to `Technical_System/` or `Extended_Techniques/` and select the appropriate category
-- **For datasets**: Go to `Open_Source/Datasets/`
-- **For tools**: Check `Open_Source_Toolchain/` for the complete toolchain
+| Column | Meaning |
+|---|---|
+| `study_id` | Sequential identifier in the released table |
+| `citation_key` | BibTeX key used in the manuscript |
+| `first_author`, `year`, `title`, `venue`, `doi` | Bibliographic record |
+| `fusion_level` | Data-level / Feature-level / Decision-level (a study may span more than one) |
+| `reported_metrics_raw` | Metrics as recorded from the study, before family merging |
+| `validation_evidence` | Benchmark / Retrospective / External / Reader study / Prospective / Unclear |
+| `uses_*` | Binary indicator (1/0) for each of the 13 metric families in Fig. 9 |
 
-### 3. Content Format
-All resources are provided as **structured pointers** (links) to original sources, including:
-- Paper DOIs/arXiv links
-- Official code repositories
-- Tool documentation pages
-- Dataset download portals
+**Counting rule.** A study contributes at most one count per metric family, regardless of the number of datasets, configurations, or variants it reports. Variants are merged at the family level:
 
----
+| Family | Merged variants |
+|---|---|
+| MI | MI, NMI, LMI |
+| SSIM | SSIM, MSSIM, MS-SSIM, LSSIM |
+| Q_AB/F | Q^AB/F, Q_AB^F |
+| SD | SD, STD |
+| EN | EN, entropy |
+| DSC | DSC, Dice |
+| Acc | Acc, accuracy, pixel-wise accuracy |
 
-## 📝 Example Content Structure
+Visual assessment, runtime, registration error, and other task-specific measures are retained in the raw column but are not among the 13 families.
 
-Each method/tool entry follows a standardized format:
+**Reproducing Fig. 9.** With the `uses_*` columns:
 
-### For Research Papers
+```python
+import pandas as pd
+
+df = pd.read_csv("studies_metric_coding.csv")
+counts = df.filter(like="uses_").sum().sort_values(ascending=False)
+print(len(df))       # 192 studies
+print(counts)
+```
+
+Expected counts: MI 88, Q_AB/F 71, SSIM 66, VIF 59, EN 55, SD 51, SF 40, PSNR 39, SCD 27, DSC 25, FMI 19, Acc 15, MSE 9.
+
+## Quick Start
+
+1. **Browse by manuscript section.** Each directory corresponds to a section of the survey; start with the `README.md` in that directory.
+2. **Find a method, dataset, or tool.** Use the directory corresponding to the fusion level or pipeline stage, or search the repository for the method name.
+3. **Check the extraction table.** `studies_metric_coding.csv` links each catalogued study to its reported metrics and validation evidence.
+
+## Entry Format
+
+Research papers:
+
 ```markdown
 ## [Paper Title]
 - **Publication**: Journal/Conference, Year
 - **Authors**: Author List
-- **Core Contributions**:
-  - Contribution 1
-  - Contribution 2
-- **Modalities**: MRI-CT / MRI-PET / All modalities
+- **Core Contributions**: ...
+- **Modalities**: MRI-CT / MRI-PET / ...
 - **Fusion Hierarchy**: Data-level / Feature-level / Decision-level
+- **Reported Metrics**: ...
 - **Links**:
-  - [Paper DOI](https://doi.org/xxx)
-  - [arXiv Preprint](https://arxiv.org/abs/xxx)
-  - [Official Code](https://github.com/xxx/xxx)
+  - [Paper DOI](https://doi.org/...)
+  - [Official Code](https://github.com/...)
 ```
 
-### For Tools/Datasets
+Tools and datasets:
+
 ```markdown
 ## [Tool/Dataset Name]
 - **Type**: Registration Tool / Dataset / Framework
 - **Applicable Modalities**: CT / MRI / PET / All
 - **License**: Apache 2.0 / MIT / Commercial (Free Academic)
 - **Links**:
-  - [Official Repository/Documentation](https://xxx)
-  - [Quick Start Guide](https://xxx)
+  - [Official Repository/Documentation](https://...)
 ```
 
----
+## How to Contribute
 
-## 🤝 How to Contribute
+Contributions that keep the collection current are welcome:
 
-We welcome contributions from the community to keep this repository up-to-date and comprehensive!
+1. Open an issue describing the proposed addition or correction.
+2. Fork the repository and follow the entry format above.
+3. Submit a pull request with a short description and the source link.
 
-### Ways to Contribute
-1. **Add new papers**: Include recently published MMIF methods
-2. **Update resources**: Add new tools, datasets, or frameworks
-3. **Fix broken links**: Report or fix outdated URLs
-4. **Improve documentation**: Clarify explanations or add examples
+Please include a DOI or publisher link for every paper, and the official repository link for every tool.
 
-### Contribution Process
-1. Open an Issue describing your proposed addition
-2. Fork the repository
-3. Make your changes following our standardized format
-4. Submit a Pull Request with a clear description
+## Maintenance
 
-Please see our [Contribution Guidelines](.github/CONTRIBUTING.md) for detailed instructions.
+The repository is maintained by the author team, with **Zhiheng Ye** as the designated maintainer. Updates are released annually and after the major medical-imaging conferences (MICCAI, ISBI, MIDL). Community corrections are handled through issues and pull requests. Each release records the date on which the links were checked; the links in the current release were verified on **29 September 2026**.
 
----
+## Citation
 
-## 📄 Citation
-
-If you find this survey or repository useful for your research, please cite our paper:
+If you use this repository or the survey, please cite:
 
 ```bibtex
-@article{chen2025mmif_survey,
-  title={Information Fusion for Medical Image Analysis: Methods, Open Tools, and Trends},
-  author={Chen, Junxin and Ye, Zhiheng and Zhang, Jiawei and Li, Qiankun and Zhang, Yudong and Chen, Yang and Mou, Jun and García, Salvador and Camacho, David},
-  journal={},
-  year={2026},
-  publisher={},
-  doi={}
+@article{chen2026mmif_survey,
+  title   = {Medical Image Fusion: Fusion Paradigms, Clinical Applications, and Open Resources},
+  author  = {Chen, Junxin and Ye, Zhiheng and Wang, Mingzhi and Zhang, Jiawei and Mou, Jun and Xu, Xu and Wu, Yongfei and Wang, Wei William},
+  journal = {Information Fusion},
+  year    = {2026},
+  note    = {Manuscript}
 }
 ```
 
-Also, please ⭐ this repository to help others discover it!
+Machine-readable metadata are provided in [`CITATION.cff`](CITATION.cff).
 
----
+## Contact
 
-## 📮 Contact
+- **Corresponding author**: Jun Mou (moujun@dlpu.edu.cn)
+- **Repository maintainer**: Zhiheng Ye (175299084@mail.dlut.edu.cn)
+- **Issues**: [GitHub Issues](https://github.com/CHamYE/MEDFusion/issues)
 
-- **Corresponding Author**: Jun Mou (moujun@dlpu.edu.cn)
-- **Repository Maintainer**: Zhiheng Ye (175299084@mail.dlut.edu.cn)
-- **Issues**: [GitHub Issues](https://github.com/CHamYe/MEDFusion/issues)
+## License
 
----
-
-## ⚠️ Disclaimer
-
-This repository is for academic research purposes only. All links point to external resources maintained by their respective authors. We do not host or distribute third-party code, datasets, or tools. Please refer to the original sources for license terms and usage restrictions.
+The repository content is released under the MIT License. All links point to external resources maintained by their respective authors; we do not host or redistribute third-party code, datasets, or tools. Please refer to the original sources for their license terms.

@@ -1,0 +1,38 @@
+cff-version: 1.2.0
+message: "If you use this repository or the associated survey, please cite the article below."
+title: "Medical Image Fusion: Fusion Paradigms, Clinical Applications, and Open Resources"
+abstract: "A survey of multi-modality medical image fusion that organizes fusion paradigms through a three-axis taxonomy of input composition, fusion stage, and output purpose, and connects them with clinical applications, open resources, evaluation, and reproducibility requirements."
+type: article
+authors:
+  - family-names: Chen
+    given-names: Junxin
+    orcid: "https://orcid.org/0000-0003-4745-8361"
+  - family-names: Ye
+    given-names: Zhiheng
+  - family-names: Wang
+    given-names: Mingzhi
+    orcid: "https://orcid.org/0000-0002-3453-6474"
+  - family-names: Zhang
+    given-names: Jiawei
+  - family-names: Mou
+    given-names: Jun
+    orcid: "https://orcid.org/0000-0002-7774-2833"
+  - family-names: Xu
+    given-names: Xu
+    orcid: "https://orcid.org/0000-0002-3934-9096"
+  - family-names: Wu
+    given-names: Yongfei
+    orcid: "https://orcid.org/0000-0002-5010-2561"
+  - family-names: Wang
+    given-names: Wei William
+    orcid: "https://orcid.org/0000-0002-1717-5785"
+year: 2026
+journal: "Information Fusion"
+repository-code: "https://github.com/CHamYE/MEDFusion"
+license: MIT
+keywords:
+  - medical image fusion
+  - multi-modality imaging
+  - deep learning
+  - evaluation metrics
+  - reproducibility
