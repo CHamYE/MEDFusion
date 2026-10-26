@@ -6,8 +6,7 @@ Junxin Chen, Zhiheng Ye, Mingzhi Wang, Jiawei Zhang, Jun Mou, Xu Xu, Yongfei Wu,
 
 ## 📄 Files
 
-- [`MEDFusion.pdf`](MEDFusion.pdf) — the R1 revision of the manuscript (41 pages).
-- [`Supplementary_Material.pdf`](Supplementary_Material.pdf) — Supplementary Tables S1–S3 (8 pages).
+- [`MEDFusion.pdf`](MEDFusion.pdf) — the R1 revision of the manuscript, with Supplementary Table S1 after the references (52 pages).
 - [`paper.md`](paper.md) — this file.
 
 ## 📌 What the paper covers
